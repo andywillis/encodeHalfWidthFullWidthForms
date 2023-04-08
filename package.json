@@ -1,0 +1,27 @@
+{
+  "name": "journal-markdown-converter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "dev": "nodemon --experimental-specifier-resolution=node --experimental-json-modules src/index",
+    "prod": "node --experimental-specifier-resolution=node --experimental-json-modules src/index",
+    "example": "node --experimental-specifier-resolution=node --experimental-json-modules example/index"
+  },
+  "dependencies": {
+    "jsdom": "21.1.1",
+    "markdown-it": "13.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
